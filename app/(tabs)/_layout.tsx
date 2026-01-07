@@ -1,6 +1,6 @@
 // 导入tabs导航器
-import { Tabs } from 'expo-router';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { Tabs } from 'expo-router';
 
 
 export default function TabLayout() {
@@ -12,12 +12,12 @@ export default function TabLayout() {
         tabBarActiveTintColor: '#ff713dff',
         //顶部背景颜色
         headerStyle: {
-            backgroundColor: '#fffd94ff',
+            backgroundColor: '#e6e6e6ff',
         },
         headerShadowVisible: false,
         headerTintColor: '#000000ff',
         tabBarStyle: {
-        backgroundColor: '#25292e',
+        backgroundColor: '#e6e6e6ff',
         },
       }}
     >
@@ -26,7 +26,7 @@ export default function TabLayout() {
         options={{
           title: '账本',
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'home-sharp' : 'home-outline'} color={color} size={24} />
+            <Ionicons name={focused ? 'book' : 'book-outline'} color={color} size={24} />
           ),
         }}
       />
@@ -40,7 +40,7 @@ export default function TabLayout() {
         options={{
           title: '账户',
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'information-circle' : 'information-circle-outline'} color={color} size={24}/>
+            <Ionicons name={focused ? 'person-circle' : 'person-circle-outline'} color={color} size={24} />
           ),
         }}
       />

@@ -1,5 +1,4 @@
-import { Link } from "expo-router";
-import { Text, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function App() {
@@ -7,8 +6,7 @@ export default function App() {
     <View style={styles.root}>
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.container}>
-          <Text style={styles.text}>Hello World</Text>
-          <Link href="/account" style={styles.button}>gogogo</Link>
+          
         </View>
       </SafeAreaView>
     </View>
@@ -28,15 +26,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  text: {
-    fontSize: 20,
-    color: 'black',
-  },
-  button:{
-    backgroundColor:"skyblue",
-    width:50,
-    height:50,
-    justifyContent:"center",
-    alignItems:"center",
-  }
 });
